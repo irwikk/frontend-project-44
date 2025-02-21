@@ -6,3 +6,5 @@ publish: #хаха публиш название смешное
 	npm publish --dry-run
 lint: #линт линт линт линт
 	npx eslint
+brain-even:
+	node bin/brain-even.js
