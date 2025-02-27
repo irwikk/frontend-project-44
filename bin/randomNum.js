@@ -1,7 +1,4 @@
-const maxNumRan = 100;
-const minNumRan = 0;
-
-const getRandomNumber = (minNum = minNumRan,
-  maxNum = maxNumRan) => Math.floor(Math.random() * maxNum) + minNum;
-
+function getRandomNumber(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
 export default getRandomNumber;
