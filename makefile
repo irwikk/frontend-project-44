@@ -1,10 +1,10 @@
-install: #йоу йоу выполнение чота там полезного npm ci
+install: 
 	npm ci
-brain-games: #игра кальмар
+brain-games: 
 	node bin/brain-games.js
-publish: #хаха публиш название смешное 
+publish: 
 	npm publish --dry-run
-lint: #линт линт линт линт
+lint: 
 	npx eslint
 brain-even:
 	node bin/brain-even.js
