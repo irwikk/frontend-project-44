@@ -5,14 +5,14 @@ const rule = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 const isEvenNumber = (num) => num % 2 === 0;
 
-const getQuestionAndAnswer = () => {
+const getQueAndAns = () => {
   const question = getRandomNumber();
   const answer = isEvenNumber(question) ? 'yes' : 'no';
   return [question, answer];
 };
 
 const initGameEven = () => {
-  playGame(rule, getQuestionAndAnswer);
+  playGame(rule, getQueAndAns);
 };
 
 export default initGameEven;

@@ -4,31 +4,31 @@ import playGame from '../index.js';
 const rule = 'What is the result of the expression?';
 const operations = ['+', '-', '*'];
 
-const getCorrectAnswer = (operand1, operand2, operation) => {
+const getCorrectAns = (first, second, operation) => {
   let answer;
   switch (operation) {
-    case '+': answer = operand1 + operand2;
+    case '+': answer = first + second;
       break;
-    case '-': answer = operand1 - operand2;
+    case '-': answer = first - second;
       break;
-    case '*': answer = operand1 * operand2;
+    case '*': answer = first * second;
       break;
     default: break;
   }
   return answer;
 };
 
-const getQuestionAndAnswer = () => {
-  const operand1 = getRandomNumber();
-  const operand2 = getRandomNumber();
+const getQueAndAns = () => {
+  const first = getRandomNumber();
+  const second = getRandomNumber();
   const operation = operations[getRandomNumber(0, operations.length)];
-  const question = `${operand1} ${operation} ${operand2}`;
-  const answer = getCorrectAnswer(operand1, operand2, operation);
+  const question = `${first} ${operation} ${second}`;
+  const answer = getCorrectAns(first, second, operation);
   return [question, String(answer)];
 };
 
 const initGameCalc = () => {
-  playGame(rule, getQuestionAndAnswer);
+  playGame(rule, getQueAndAns);
 };
 
 export default initGameCalc;
