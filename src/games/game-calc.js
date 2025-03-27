@@ -1,4 +1,4 @@
-import getRandomNumber from '../../bin/getRandomNumber.js';
+import getRandomNumber from '../../src/getRandomNumber.js';
 import playGame from '../index.js';
 
 const rule = 'What is the result of the expression?';
