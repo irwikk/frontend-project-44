@@ -4,14 +4,14 @@ import playGame from '../index.js';
 const rule = 'What is the result of the expression?';
 const operations = ['+', '-', '*'];
 
-const getCorrectAns = (first, second, operation) => {
+const calc = (num1, num2, operation) => {
   let answer;
   switch (operation) {
-    case '+': answer = first + second;
+    case '+': answer = num1 + num2;
       break;
-    case '-': answer = first - second;
+    case '-': answer = num1 - num2;
       break;
-    case '*': answer = first * second;
+    case '*': answer = num1 * num2;
       break;
     default: break;
   }
@@ -19,12 +19,14 @@ const getCorrectAns = (first, second, operation) => {
 };
 
 const getQueAndAns = () => {
-  const first = getRandomNumber();
-  const second = getRandomNumber();
+  const num1 = getRandomNumber(0, 10);
+  const num2 = getRandomNumber(0, 10);
+
   const operation = operations[getRandomNumber(0, operations.length)];
-  const question = `${first} ${operation} ${second}`;
-  const answer = getCorrectAns(first, second, operation);
-  return [question, String(answer)];
+  const question = `${num1} ${operation} ${num2}`;
+  const answer = String(calc(num1, num2, operation));
+
+  return [question, answer];
 };
 
 const initGameCalc = () => {
