@@ -14,17 +14,17 @@ const getGCD = (first, second) => {
 };
 
 
-const getQueAndAns = () => {
+const getQAndA = () => {
   const num1 = getRandomNumber(1, 50);
   const num2 = getRandomNumber(1, 50);
   
-  const question = `${num1} ${num2}`;
+  const que = `${num1} ${num2}`;
   const answer = String(getGCD(num1, num2));
-  return [question, answer];
+  return [que, answer];
 };
 
-const initGameGCD = () => {
-  playGame(rule, getQueAndAns);
+const GameGCD = () => {
+  playGame(rule, getQAndA);
 };
 
-export default initGameGCD;
+export default GameGCD;

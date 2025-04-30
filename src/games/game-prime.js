@@ -11,14 +11,14 @@ const isPrimeNumber = (num) => {
   return true;
 };
 
-const getQueAndAns = () => {
-  const question = getRandomNumber();
+const getQAndA = () => {
+  const que = getRandomNumber();
   const answer = isPrimeNumber(question) ? 'yes' : 'no';
-  return [question, answer];
+  return [que, answer];
 };
 
-const initGamePrime = () => {
-  playGame(rule, getQueAndAns);
+const GamePrime = () => {
+  playGame(rule, getQAndA);
 };
 
-export default initGamePrime;
+export default GamePrime;

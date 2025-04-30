@@ -3,16 +3,16 @@ import playGame from '../index.js';
 
 const rule = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-const isEvenNum = (num) => num % 2 === 0;
+const isEven = (num) => num % 2 === 0;
 
-const getQueAndAns = () => {
-  const question = getRandomNumber();
-  const answer = isEvenNum(question) ? 'yes' : 'no';
-  return [question, answer];
+const getQAndA = () => {
+  const que = getRandomNumber();
+  const answer = isEven(que) ? 'yes' : 'no';
+  return [que, answer];
 };
 
-const initGameEven = () => {
-  playGame(rule, getQueAndAns);
+const GameEven = () => {
+  playGame(rule, getQAndA);
 };
 
-export default initGameEven;
+export default GameEven;

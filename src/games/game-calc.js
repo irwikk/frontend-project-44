@@ -18,19 +18,19 @@ const calc = (num1, num2, operation) => {
   return answer;
 };
 
-const getQueAndAns = () => {
+const getQAndA = () => {
   const num1 = getRandomNumber(0, 10);
   const num2 = getRandomNumber(0, 10);
 
   const operation = operations[getRandomNumber(0, operations.length)];
-  const question = `${num1} ${operation} ${num2}`;
+  const que = `${num1} ${operation} ${num2}`;
   const answer = String(calc(num1, num2, operation));
 
-  return [question, answer];
+  return [que, answer];
 };
 
-const initGameCalc = () => {
-  playGame(rule, getQueAndAns);
+const GameCalc = () => {
+  playGame(rule, getQAndA);
 };
 
-export default initGameCalc;
+export default GameCalc;

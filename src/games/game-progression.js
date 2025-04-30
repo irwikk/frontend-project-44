@@ -17,19 +17,19 @@ const getArithmeticProgression = () => {
   return progression;
 };
 
-const getQueAndAns = () => {
+const getQAndA = () => {
   const progression = getArithmeticProgression();
   const randomIndex = getRandomNumber(0, progressionLength);
 
   const correctAnswer = String(progression[randomIndex]);
   progression[randomIndex] = '..';
-  const question = progression;
+  const que = progression;
 
-  return [question, correctAnswer];
+  return [que, correctAnswer];
 };
 
-const initGameProgression = () => {
-  playGame(rule, getQueAndAns);
+const GameProgression = () => {
+  playGame(rule, getQAndA);
 };
 
-export default initGameProgression;
+export default GameProgression;
