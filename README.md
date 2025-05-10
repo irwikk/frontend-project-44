@@ -7,28 +7,24 @@
 ### brain-even
 Проверка на чётность. Пользователю показывается случайное число, ему нужно ответить yes, если число чётное, или no — если нечётное.
 
-![Screenshot_110](https://github.com/user-attachments/assets/5c07a30e-850a-41d7-98ec-9507b53f92eb)
-
+![Screenshot_110](https://github.com/user-attachments/assets/0b211056-d9e1-4a71-bdd4-c6d3fbcda986)
 
 ### brain-calc
 Калькулятор. Пользователю показывается случайное математическое выражение, которое нужно вычислить и записать правильный ответ.
 
-![Screenshot_111](https://github.com/user-attachments/assets/f0d5bf7e-2c9f-4714-8655-6514bf37ee1b)
-
+![Screenshot_111](https://github.com/user-attachments/assets/62143f5c-e8ec-4a9b-8345-5f0cd0abca4c)
 
 ### brain-gcd
 Наибольший общий делитель (НОД). Пользователю показывается два случайных числа, пользователь должен вычислить и ввести наибольший общий делитель этих чисел.
 
-![Screenshot_112](https://github.com/user-attachments/assets/bb3347c2-0e83-4303-9c1a-6adff977dfce)
-
+![Screenshot_112](https://github.com/user-attachments/assets/e1453b81-b600-4132-8311-91c915c71ba3)
 
 ### brain-progression
 Арифметическая прогрессия. Показываем игроку ряд чисел, образующий арифметическую прогрессию, заменив любое из чисел двумя точками. Игрок должен определить это число.
 
-![Screenshot_113](https://github.com/user-attachments/assets/b2526891-04ff-4cc6-b2ce-7a7f173b2479)
-
+![Screenshot_113](https://github.com/user-attachments/assets/4cad9016-2371-4eb7-af2c-072cf9d77d87)
 
 ### brain-prime
 Простое ли число? Пользователю показывается случайное число, ему нужно ответить yes, если число простое, или no — если не простое. 
 
-![Screenshot_114](https://github.com/user-attachments/assets/e94d6e59-4135-43ea-8b10-b7d38425e150)
+![Screenshot_114](https://github.com/user-attachments/assets/8fa19d68-f074-4c4e-8421-a32b2ce87cfe)
