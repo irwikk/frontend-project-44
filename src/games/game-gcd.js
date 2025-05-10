@@ -13,11 +13,10 @@ const getGCD = (first, second) => {
   return getGCD(first, second - first)
 }
 
-
 const getQAndA = () => {
   const num1 = getRandomNumber(1, 50)
   const num2 = getRandomNumber(1, 50)
-  
+
   const que = `${num1} ${num2}`
   const answer = String(getGCD(num1, num2))
   return [que, answer]

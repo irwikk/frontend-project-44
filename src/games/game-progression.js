@@ -18,7 +18,7 @@ const getQAndA = () => {
   progression[skip] = '..'
   const que = progression.join(' ')
   return [que, String(answer)]
-};
+}
 
 const GameProgression = () => {
   playGame(rule, getQAndA)
