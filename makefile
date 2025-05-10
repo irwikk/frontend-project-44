@@ -1,4 +1,4 @@
-install: 
+install: #ПОЧЕМУ НЕ КОМИТИЦА
 	npm ci
 brain-games: 
 	node bin/brain-games.js
