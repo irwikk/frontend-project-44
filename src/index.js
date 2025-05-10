@@ -4,8 +4,8 @@ const roundsCount = 3;
 
 const playGame = (rule, getQAndA) => {
   console.log('Welcome to the Brain Games!');
-  const userName = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${userName}!`);
+  const name = readlineSync.question('May I have your name? ');
+  console.log(`Hello, ${name}!`);
 
   console.log(rule);
   let correctAnsCount = 0;
@@ -20,11 +20,11 @@ const playGame = (rule, getQAndA) => {
       correctAnsCount += 1;
     } else {
       console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${correctAnswer}".`);
-      console.log(`Let's try again, ${userName}!`);
+      console.log(`Let's try again, ${name}!`);
       return;
     }
   }
-  console.log(`Congratulations, ${userName}!`);
+  console.log(`Congratulations, ${name}!`);
 };
 
 export default playGame;
